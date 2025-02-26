@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Speech API example</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+      <h1>Web Speech API example</h1>
+      <p>Click the button and start speaking</p>
+      <textarea id="textarea" rows="10" cols="100">
+I love London! 
+It's such an exciting city and the shopping is great.
+Although I think the shops are much more expensive than in New York.
+I also love all the historic buildings.
+New York is full of ugly, modern buildings, so London is much more beautiful.
+The nightlife in London is really good, too.
+People say London's nightlife is not as good as New York's, but I disagree.
+I think London's is just as exciting.
+      </textarea><br>
+      <button id="recording-button">Start recording</button>
+      <button id="speak">Speak</button>
+      <label>Voice:
+        <select id="select"></select>
+      </label>
+      <div id="transcription-result"></div>
+      <p id="error-message" hidden aria-hidden="true">
+        Button was removed<br>Your browser doesn't support Speech Recognition with the Web Speech API
+      </p>
+    <script src="speechAPI.js"></script>
+  </body>
+</html>
